@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header'
-import Content from './Content'
-import Text from './Text'
-import Link from './Link'
-import Ad from './Ad'
-import Articles from './Articles'
-import Footer from './Footer'
-import './Header.css'
+import MainContent from './MainContent'
 import './App.css';
 
 class App extends Component {
@@ -14,18 +8,14 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        
-    <main className="expanded row">
-      <div className="large-8 medium-12 columns article">
-        <Content />
-        <Text />
-        <Link />
-      </div>
-      <Ad />
-      <Articles />
-    </main>
 
-    <Footer />
+        <MainContent />
+
+        <footer className="expanded row">
+          <h6>&copy; 2017 Erebor Industries</h6>
+          <h6 className="float-right">All rights reserved</h6>
+        </footer>
+
       </div>
     );
   }
